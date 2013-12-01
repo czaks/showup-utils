@@ -35,8 +35,8 @@ end
 
 require "socket"
 
-randomhash = "8a2da705104c2aada447a39b8d69ebf9"
-#32.times { randomhash << rand(16).to_s(16) }
+randomhash = ""
+32.times { randomhash << rand(16).to_s(16) }
 
 s = TCPSocket.new(*ARGV[0].split(":"))
 sleep 0.5
